@@ -11,5 +11,11 @@
 
 "onboardingTitle1": "Track your packages easily",
 
-"onboardingDescription1": "Keep an eye on your shipments in real time."
+"onboardingDescription1": "Track your packages in real time.",
+
+"onboardingSubDescription1": "Easily track your packages from shipment to delivery,directly from your phone.",
+"onboardingDescription2": "Receive instant notifications.",
+"onboardingSubDescription2": "Stay informed at every stage of the shipment with notifications sent directly to your phone.",
+"onboardingDescription3": "Manage your payments easily.",
+"onboardingSubDescription3": "Easily track your packages from shipment to delivery,directly from your phone.Check the cost of your shipments and send your proof of payment directly from the app."
 }

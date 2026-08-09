@@ -131,8 +131,38 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingDescription1.
   ///
   /// In en, this message translates to:
-  /// **'Keep an eye on your shipments in real time.'**
+  /// **'Track your packages in real time.'**
   String get onboardingDescription1;
+
+  /// No description provided for @onboardingSubDescription1.
+  ///
+  /// In en, this message translates to:
+  /// **'Easily track your packages from shipment to delivery,directly from your phone.'**
+  String get onboardingSubDescription1;
+
+  /// No description provided for @onboardingDescription2.
+  ///
+  /// In en, this message translates to:
+  /// **'Receive instant notifications.'**
+  String get onboardingDescription2;
+
+  /// No description provided for @onboardingSubDescription2.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay informed at every stage of the shipment with notifications sent directly to your phone.'**
+  String get onboardingSubDescription2;
+
+  /// No description provided for @onboardingDescription3.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage your payments easily.'**
+  String get onboardingDescription3;
+
+  /// No description provided for @onboardingSubDescription3.
+  ///
+  /// In en, this message translates to:
+  /// **'Easily track your packages from shipment to delivery,directly from your phone.Check the cost of your shipments and send your proof of payment directly from the app.'**
+  String get onboardingSubDescription3;
 }
 
 class _AppLocalizationsDelegate

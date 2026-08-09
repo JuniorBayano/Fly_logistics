@@ -7,6 +7,8 @@ import 'package:fly_logistics/core/localization/language_provider.dart';
 import 'package:fly_logistics/core/Theme/app_theme.dart';
 
 import 'package:fly_logistics/core/localization/generated/app_localizations.dart';
+
+import 'onboarding/screens/onboard.dart';
 class FlyLogisticsApp extends ConsumerStatefulWidget {
   const FlyLogisticsApp({super.key});
 
@@ -34,76 +36,8 @@ class _FlyLogisticsApp extends ConsumerState<FlyLogisticsApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home:const LanguageTestScreen(),
+      home:const OnboardScreen(),
     );
   }
 
-}
-
-class LanguageTestScreen extends ConsumerWidget {
-
-  const LanguageTestScreen({super.key});
-
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-
-    final localizations = AppLocalizations.of(context);
-
-
-    return Scaffold(
-      body: Center(
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-
-          children: [
-
-            Text(
-              localizations!.onboardingDescription1,
-              style: const TextStyle(
-                fontSize: 20,
-              ),
-            ),
-
-
-            const SizedBox(height: 20),
-
-
-            ElevatedButton(
-              onPressed: () {
-
-                ref
-                    .read(languageProvider.notifier)
-                    .changeLanguage(
-                  const Locale('en'),
-                );
-
-              },
-
-              child: const Text("English"),
-            ),
-
-
-
-            ElevatedButton(
-              onPressed: () {
-
-                ref
-                    .read(languageProvider.notifier)
-                    .changeLanguage(
-                  const Locale('fr'),
-                );
-
-              },
-
-              child: const Text("Français"),
-            ),
-
-
-          ],
-        ),
-      ),
-    );
-  }
 }

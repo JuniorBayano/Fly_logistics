@@ -24,6 +24,23 @@ class AppLocalizationsFr extends AppLocalizations {
   String get onboardingTitle1 => 'Suivez vos colis facilement';
 
   @override
-  String get onboardingDescription1 =>
-      'Gardez un œil sur vos expéditions en temps réel.';
+  String get onboardingDescription1 => 'Suivez vos colis en temps réel.';
+
+  @override
+  String get onboardingSubDescription1 =>
+      'Suivez facilement l’évolution de vos colis depuis l’expédition jusqu’à la livraison,directement depuis votre téléphone.';
+
+  @override
+  String get onboardingDescription2 => 'Recevez des notifications instantanées';
+
+  @override
+  String get onboardingSubDescription2 =>
+      'Soyez informé à chaque étape de l’expédition grâce aux notifications envoyées directement sur votre téléphone.';
+
+  @override
+  String get onboardingDescription3 => 'Gérez vos paiements facilement';
+
+  @override
+  String get onboardingSubDescription3 =>
+      'Consultez le montant de vos expéditions et envoyez vos preuves de paiement directement depuis l’application.';
 }
