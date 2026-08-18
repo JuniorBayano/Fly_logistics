@@ -66,7 +66,6 @@ class _OnboardScreenState extends ConsumerState<OnboardScreen> {
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () {
-                    // TODO
                   },
                   child: Text(
                     local.skip,
@@ -131,7 +130,6 @@ class _OnboardScreenState extends ConsumerState<OnboardScreen> {
 
                   } else {
 
-                    // TODO Aller vers Login
 
                   }
 

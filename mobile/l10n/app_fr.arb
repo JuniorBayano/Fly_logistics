@@ -2,20 +2,51 @@
 "@@locale": "fr",
 
 "appName": "Fly Logistics",
-
 "next": "Suivant",
-
 "skip": "Passer",
-
 "start": "Commencer",
-
 "onboardingTitle1": "Suivez vos colis facilement",
-
 "onboardingDescription1": "Suivez vos colis en temps réel.",
 "onboardingSubDescription1": "Suivez facilement l’évolution de vos colis depuis l’expédition jusqu’à la livraison,directement depuis votre téléphone.",
 "onboardingDescription2": "Recevez des notifications instantanées",
 "onboardingSubDescription2": "Soyez informé à chaque étape de l’expédition grâce aux notifications envoyées directement sur votre téléphone.",
 "onboardingDescription3": "Gérez vos paiements facilement",
-"onboardingSubDescription3": "Consultez le montant de vos expéditions et envoyez vos preuves de paiement directement depuis l’application."
+"onboardingSubDescription3": "Consultez le montant de vos expéditions et envoyez vos preuves de paiement directement depuis l’application.",
+"createAccount": "Créez votre compte partenaire",
+"fullName": "Nom Complet",
+"email": "Email",
+"phone_number": "Numero de telephone",
+"password": "Mot de passe",
+"confirm_password": "Confirmer le mot de passe",
+"agree_condition": "J'accepte les Conditions d'Utilisation et la Politique de Confidentialité.",
+"inscription": "S'inscrire",
+"account": "Deja un compte ?",
+"register": "Se connecter",
+"welcome": "Bienvenue sur votre espace logistique",
+"mailOrPhoneNumber": "Email ou Téléphone",
+"forgotPassword": "Mot de passe oublié ?",
+"remindMe": "Se souvenir de moi",
+"haveAccount": "Vous n'avez pas de compte ? ",
+"contactAdmin": "Contactez l'administrateur",
+"always": "Almost there",
+"verify": "Verifier",
+"otpSend": "Veuillez saisir le code envoyé à votre adresse e-mail tsafackjuniordauphin@gmail.com pour la vérification.",
+"success": "Success!",
+"nowConnect": "Vous êtes maintenant connecté.",
+"continu": "Continue",
+"followPackage": "ContinuSuivez vos envois en temps réel partout dans le monde",
+"summaryActivity": "Résumé des activités",
+"transit": "En transit",
+"delivery": "Livrées",
+"activePackage": "colis actif(s)",
+"finish": "terminé(s)",
+"followPackage": "Suivre un colis",
+"trackingNumber": "Numéro de suivi",
+"recentSms": "Notifications récentes",
+"allViews": "Voir tout",
+"preparePackage": "Colis en préparation",
+"subPreparePackage": "Votre colis #FLY-9921 est en cours de préparation à l'entrepôt de Paris",
+"arriveCenter": "Arrivée au centre",
+"subArriveCenter": "L'envoi #FLY-8827 est arrivé au centre de tri régional."
 
 }

@@ -2,20 +2,50 @@
 "@@locale": "en",
 
 "appName": "Fly Logistics",
-
 "next": "Next",
-
 "skip": "Skip",
-
 "start": "Get Started",
-
 "onboardingTitle1": "Track your packages easily",
-
 "onboardingDescription1": "Track your packages in real time.",
-
 "onboardingSubDescription1": "Easily track your packages from shipment to delivery,directly from your phone.",
 "onboardingDescription2": "Receive instant notifications.",
 "onboardingSubDescription2": "Stay informed at every stage of the shipment with notifications sent directly to your phone.",
 "onboardingDescription3": "Manage your payments easily.",
-"onboardingSubDescription3": "Easily track your packages from shipment to delivery,directly from your phone.Check the cost of your shipments and send your proof of payment directly from the app."
+"onboardingSubDescription3": "Easily track your packages from shipment to delivery,directly from your phone.Check the cost of your shipments and send your proof of payment directly from the app.",
+"createAccount": "Create your partner account",
+"fullName": "Full name",
+"email": "Email",
+"phone_number": "Phone number",
+"password": "Password",
+"confirm_password": "Confirm password",
+"agree_condition": "I accept the Terms of Use and the Privacy Policy.",
+"inscription": "Sign up",
+"account": "Already have an account?",
+"register": "Log in",
+"welcome": "Welcome to your logistics space",
+"welcome": "Welcome to your logistics space",
+  "mailOrPhoneNumber": "Email or Phone Number",
+  "forgotPassword": "Forgot your password?",
+  "remindMe": "Remember me",
+  "haveAccount": "Don't have an account?",
+  "contactAdmin": "Contact the administrator",
+  "always": "Almost there",
+  "verify": "Verify",
+  "otpSend": "Please enter the code sent to your email address tsafackjuniordauphin@gmail.com for verification.",
+  "success": "Success!",
+  "nowConnect": "You are now connected.",
+  "continu": "Continue",
+  "followPackage": "Track a package",
+  "summaryActivity": "Activity Summary",
+  "transit": "In transit",
+  "delivery": "Delivered",
+  "activePackage": "active package(s)",
+  "finish": "completed",
+  "trackingNumber": "Tracking Number",
+  "recentSms": "Recent Notifications",
+  "allViews": "View All",
+  "preparePackage": "Package being prepared",
+  "subPreparePackage": "Your package #FLY-9921 is being prepared at the Paris warehouse",
+  "arriveCenter": "Arrived at the center",
+  "subArriveCenter": "Shipment #FLY-8827 has arrived at the regional sorting center."
 }

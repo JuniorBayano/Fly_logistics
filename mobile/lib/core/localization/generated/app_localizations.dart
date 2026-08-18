@@ -163,6 +163,216 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Easily track your packages from shipment to delivery,directly from your phone.Check the cost of your shipments and send your proof of payment directly from the app.'**
   String get onboardingSubDescription3;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your partner account'**
+  String get createAccount;
+
+  /// No description provided for @fullName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full name'**
+  String get fullName;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @phone_number.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get phone_number;
+
+  /// No description provided for @password.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// No description provided for @confirm_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password'**
+  String get confirm_password;
+
+  /// No description provided for @agree_condition.
+  ///
+  /// In en, this message translates to:
+  /// **'I accept the Terms of Use and the Privacy Policy.'**
+  String get agree_condition;
+
+  /// No description provided for @inscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up'**
+  String get inscription;
+
+  /// No description provided for @account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get account;
+
+  /// No description provided for @register.
+  ///
+  /// In en, this message translates to:
+  /// **'Log in'**
+  String get register;
+
+  /// No description provided for @welcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to your logistics space'**
+  String get welcome;
+
+  /// No description provided for @mailOrPhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Email or Phone Number'**
+  String get mailOrPhoneNumber;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot your password?'**
+  String get forgotPassword;
+
+  /// No description provided for @remindMe.
+  ///
+  /// In en, this message translates to:
+  /// **'Remember me'**
+  String get remindMe;
+
+  /// No description provided for @haveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get haveAccount;
+
+  /// No description provided for @contactAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact the administrator'**
+  String get contactAdmin;
+
+  /// No description provided for @always.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost there'**
+  String get always;
+
+  /// No description provided for @verify.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get verify;
+
+  /// No description provided for @otpSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the code sent to your email address tsafackjuniordauphin@gmail.com for verification.'**
+  String get otpSend;
+
+  /// No description provided for @success.
+  ///
+  /// In en, this message translates to:
+  /// **'Success!'**
+  String get success;
+
+  /// No description provided for @nowConnect.
+  ///
+  /// In en, this message translates to:
+  /// **'You are now connected.'**
+  String get nowConnect;
+
+  /// No description provided for @continu.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continu;
+
+  /// No description provided for @followPackage.
+  ///
+  /// In en, this message translates to:
+  /// **'Track a package'**
+  String get followPackage;
+
+  /// No description provided for @summaryActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity Summary'**
+  String get summaryActivity;
+
+  /// No description provided for @transit.
+  ///
+  /// In en, this message translates to:
+  /// **'In transit'**
+  String get transit;
+
+  /// No description provided for @delivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivered'**
+  String get delivery;
+
+  /// No description provided for @activePackage.
+  ///
+  /// In en, this message translates to:
+  /// **'active package(s)'**
+  String get activePackage;
+
+  /// No description provided for @finish.
+  ///
+  /// In en, this message translates to:
+  /// **'completed'**
+  String get finish;
+
+  /// No description provided for @trackingNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Tracking Number'**
+  String get trackingNumber;
+
+  /// No description provided for @recentSms.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Notifications'**
+  String get recentSms;
+
+  /// No description provided for @allViews.
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get allViews;
+
+  /// No description provided for @preparePackage.
+  ///
+  /// In en, this message translates to:
+  /// **'Package being prepared'**
+  String get preparePackage;
+
+  /// No description provided for @subPreparePackage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your package #FLY-9921 is being prepared at the Paris warehouse'**
+  String get subPreparePackage;
+
+  /// No description provided for @arriveCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrived at the center'**
+  String get arriveCenter;
+
+  /// No description provided for @subArriveCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipment #FLY-8827 has arrived at the regional sorting center.'**
+  String get subArriveCenter;
 }
 
 class _AppLocalizationsDelegate
