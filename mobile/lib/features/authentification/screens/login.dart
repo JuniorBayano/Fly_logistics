@@ -67,7 +67,7 @@ Widget build(BuildContext context) {
                             ),AuthTextField(
                               label: AppLocalizations.of(context)!.password,
                               hintText: "..............",
-                              icon: Icons.mail,
+                              icon: Icons.lock_outline_rounded,
                             ),
                             SizedBox(height: 10,),
                             Row(

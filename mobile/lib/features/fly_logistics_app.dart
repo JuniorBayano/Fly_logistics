@@ -9,7 +9,9 @@ import 'package:fly_logistics/core/Theme/app_theme.dart';
 import 'package:fly_logistics/core/localization/generated/app_localizations.dart';
 import 'package:fly_logistics/features/authentification/screens/login.dart';
 
+import 'authentification/screens/otp_screen.dart';
 import 'authentification/screens/register.dart';
+import 'authentification/screens/succes_register.dart';
 import 'onboarding/screens/onboard.dart';
 class FlyLogisticsApp extends ConsumerStatefulWidget {
   const FlyLogisticsApp({super.key});
@@ -38,7 +40,7 @@ class _FlyLogisticsApp extends ConsumerState<FlyLogisticsApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home:const LoginScreen(),
+      home:const SuccesRegister(),
     );
   }
 
