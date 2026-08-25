@@ -23,7 +23,6 @@
 "account": "Already have an account?",
 "register": "Log in",
 "welcome": "Welcome to your logistics space",
-"welcome": "Welcome to your logistics space",
   "mailOrPhoneNumber": "Email or Phone Number",
   "forgotPassword": "Forgot your password?",
   "remindMe": "Remember me",
@@ -35,7 +34,7 @@
   "success": "Success!",
   "nowConnect": "You are now connected.",
   "continu": "Continue",
-  "followPackage": "Track a package",
+  "followPackage": "Track your shipments in real time anywhere in the world.",
   "summaryActivity": "Activity Summary",
   "transit": "In transit",
   "delivery": "Delivered",
@@ -47,5 +46,10 @@
   "preparePackage": "Package being prepared",
   "subPreparePackage": "Your package #FLY-9921 is being prepared at the Paris warehouse",
   "arriveCenter": "Arrived at the center",
-  "subArriveCenter": "Shipment #FLY-8827 has arrived at the regional sorting center."
+  "subArriveCenter": "Shipment #FLY-8827 has arrived at the regional sorting center.",
+  "followCourses": "Track a package",
+  "home": "Home",
+  "followUp": "follow up",
+  "rate": "rates",
+  "profil": "profile"
 }

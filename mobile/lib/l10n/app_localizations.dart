@@ -18,7 +18,7 @@ import 'app_localizations_fr.dart';
 /// `supportedLocales` list. For example:
 ///
 /// ```dart
-/// import 'generated/app_localizations.dart';
+/// import 'l10n/app_localizations.dart';
 ///
 /// return MaterialApp(
 ///   localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -299,7 +299,7 @@ abstract class AppLocalizations {
   /// No description provided for @followPackage.
   ///
   /// In en, this message translates to:
-  /// **'Track a package'**
+  /// **'Track your shipments in real time anywhere in the world.'**
   String get followPackage;
 
   /// No description provided for @summaryActivity.
@@ -373,6 +373,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Shipment #FLY-8827 has arrived at the regional sorting center.'**
   String get subArriveCenter;
+
+  /// No description provided for @followCourses.
+  ///
+  /// In en, this message translates to:
+  /// **'Track a package'**
+  String get followCourses;
+
+  /// No description provided for @home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home;
+
+  /// No description provided for @followUp.
+  ///
+  /// In en, this message translates to:
+  /// **'follow up'**
+  String get followUp;
+
+  /// No description provided for @rate.
+  ///
+  /// In en, this message translates to:
+  /// **'rates'**
+  String get rate;
+
+  /// No description provided for @profil.
+  ///
+  /// In en, this message translates to:
+  /// **'profile'**
+  String get profil;
 }
 
 class _AppLocalizationsDelegate

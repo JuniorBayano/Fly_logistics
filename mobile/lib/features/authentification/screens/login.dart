@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/Theme/app_colors.dart';
 import '../../../core/constant/app_constants.dart';
-import '../../../core/localization/generated/app_localizations.dart';
+import '../../../l10n/app_localizations.dart';
 import '../../../shared/widgets/app_button.dart';
 import '../../../shared/widgets/auth_text_field.dart';
 

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:fly_logistics/core/Theme/app_colors.dart';
-import 'package:fly_logistics/core/localization/generated/app_localizations.dart';
 
 import 'package:fly_logistics/shared/models/onboarding_model.dart';
 
+import '../../../l10n/app_localizations.dart';
 import '../../../shared/widgets/onboarding_page.dart';
 import '../../../shared/widgets/page_indicator.dart';
 

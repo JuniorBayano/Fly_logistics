@@ -34,19 +34,23 @@
 "success": "Success!",
 "nowConnect": "Vous êtes maintenant connecté.",
 "continu": "Continue",
-"followPackage": "ContinuSuivez vos envois en temps réel partout dans le monde",
+"followPackage": "Suivez vos envois en temps réel partout dans le monde",
 "summaryActivity": "Résumé des activités",
 "transit": "En transit",
 "delivery": "Livrées",
 "activePackage": "colis actif(s)",
 "finish": "terminé(s)",
-"followPackage": "Suivre un colis",
 "trackingNumber": "Numéro de suivi",
 "recentSms": "Notifications récentes",
 "allViews": "Voir tout",
 "preparePackage": "Colis en préparation",
 "subPreparePackage": "Votre colis #FLY-9921 est en cours de préparation à l'entrepôt de Paris",
 "arriveCenter": "Arrivée au centre",
-"subArriveCenter": "L'envoi #FLY-8827 est arrivé au centre de tri régional."
+"subArriveCenter": "L'envoi #FLY-8827 est arrivé au centre de tri régional.",
+"followCourses": "Suivre un colis",
+"home": "Acceuil",
+"followUp": "suivi",
+"rate": "tarifs",
+"profil": "profil"
 
 }

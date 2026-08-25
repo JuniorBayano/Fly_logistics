@@ -4,8 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fly_logistics/core/Theme/app_colors.dart';
 import 'package:fly_logistics/core/constant/app_constants.dart';
 import 'package:fly_logistics/shared/widgets/app_button.dart';
-
-import '../../../core/localization/generated/app_localizations.dart';
+import '../../../l10n/app_localizations.dart';
 import '../../../shared/widgets/auth_text_field.dart';
 
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fly_logistics/core/Theme/app_colors.dart';
-import 'package:fly_logistics/core/localization/generated/app_localizations.dart';
 
+import '../../../l10n/app_localizations.dart';
 
 class SuccesRegister extends StatelessWidget{
   const SuccesRegister({super.key});

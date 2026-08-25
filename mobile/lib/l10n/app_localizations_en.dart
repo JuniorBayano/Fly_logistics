@@ -113,7 +113,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get continu => 'Continue';
 
   @override
-  String get followPackage => 'Track a package';
+  String get followPackage =>
+      'Track your shipments in real time anywhere in the world.';
 
   @override
   String get summaryActivity => 'Activity Summary';
@@ -152,4 +153,19 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get subArriveCenter =>
       'Shipment #FLY-8827 has arrived at the regional sorting center.';
+
+  @override
+  String get followCourses => 'Track a package';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get followUp => 'follow up';
+
+  @override
+  String get rate => 'rates';
+
+  @override
+  String get profil => 'profile';
 }

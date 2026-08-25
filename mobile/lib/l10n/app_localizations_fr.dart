@@ -113,7 +113,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get continu => 'Continue';
 
   @override
-  String get followPackage => 'Suivre un colis';
+  String get followPackage =>
+      'Suivez vos envois en temps réel partout dans le monde';
 
   @override
   String get summaryActivity => 'Résumé des activités';
@@ -152,4 +153,19 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get subArriveCenter =>
       'L\'envoi #FLY-8827 est arrivé au centre de tri régional.';
+
+  @override
+  String get followCourses => 'Suivre un colis';
+
+  @override
+  String get home => 'Acceuil';
+
+  @override
+  String get followUp => 'suivi';
+
+  @override
+  String get rate => 'tarifs';
+
+  @override
+  String get profil => 'profil';
 }
