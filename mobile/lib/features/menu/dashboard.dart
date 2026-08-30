@@ -54,7 +54,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                       backgroundColor: Colors.green,
                                       child: ClipOval(
                                         child: Image.asset(
-                                          "assets/images/container.png",
+                                          "assets/images/profile.jpeg",
                                           width: 40,
                                           height: 40,
                                           fit: BoxFit.cover,

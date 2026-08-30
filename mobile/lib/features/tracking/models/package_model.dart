@@ -29,6 +29,8 @@ class PackageModel {
 
   final double amountToPay;
 
+  final String imagePath;
+
   const PackageModel({
     required this.code,
     required this.shippingMethod,
@@ -39,5 +41,6 @@ class PackageModel {
     required this.weight,
     required this.shippingDate,
     required this.amountToPay,
+    required this.imagePath,
   });
 }

@@ -7,6 +7,8 @@ import 'package:fly_logistics/core/localization/language_provider.dart';
 import 'package:fly_logistics/core/Theme/app_theme.dart';
 
 import 'package:fly_logistics/features/authentification/screens/login.dart';
+import 'package:fly_logistics/features/tracking/screens/payment_screen.dart';
+import 'package:fly_logistics/features/tracking/screens/tracking_detail_screen.dart';
 
 import '../l10n/app_localizations.dart';
 import 'authentification/screens/otp_screen.dart';

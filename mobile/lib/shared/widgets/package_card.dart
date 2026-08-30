@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../core/Theme/app_colors.dart';
 import '../../features/tracking/models/package_model.dart';
+import '../../features/tracking/screens/tracking_detail_screen.dart';
 
 class PackageCard extends StatelessWidget {
   final PackageModel package;
@@ -63,6 +64,14 @@ class PackageCard extends StatelessWidget {
       case PackageStatus.delivered:
         return Colors.green;
     }
+  }
+
+  String formatDate(DateTime date) {
+    final day = date.day.toString().padLeft(2, '0');
+    final month = date.month.toString().padLeft(2, '0');
+    final year = date.year.toString();
+
+    return '$day/$month/$year';
   }
 
   @override
@@ -223,11 +232,7 @@ class PackageCard extends StatelessWidget {
                         const SizedBox(width: 5),
 
                         Text(
-                          'Livraison : '
-                              '${package.estimatedDeliveryDate.day}/'
-                              '${package.estimatedDeliveryDate.month}/'
-                              '${package.estimatedDeliveryDate.year}',
-
+                          'Livraison : ${formatDate(package.estimatedDeliveryDate)}',
                           style: const TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
@@ -239,7 +244,6 @@ class PackageCard extends StatelessWidget {
                   ],
                 ),
 
-                /// PROGRESSION
                 Column(
                   children: [
 
@@ -301,8 +305,14 @@ class PackageCard extends StatelessWidget {
               ),
 
               onPressed: () {
-                // Plus tard :
-                // Navigation vers les détails du colis
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => TrackingScreenDetail(
+                      package: package,
+                    ),
+                  ),
+                );
               },
 
               child: const Row(

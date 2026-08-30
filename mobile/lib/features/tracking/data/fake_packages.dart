@@ -20,6 +20,8 @@ final List<PackageModel> fakePackages = [
     shippingDate: DateTime(2026, 10, 10),
 
     amountToPay: 15000,
+
+      imagePath: "assets/images/colis.png"
   ),
 
   PackageModel(
@@ -41,6 +43,7 @@ final List<PackageModel> fakePackages = [
     shippingDate: DateTime(2026, 10, 15),
 
     amountToPay: 25000,
+    imagePath: "assets/images/colis.png"
   ),
 
   PackageModel(
@@ -62,6 +65,7 @@ final List<PackageModel> fakePackages = [
     shippingDate: DateTime(2026, 10, 05),
 
     amountToPay: 10000,
+      imagePath: "assets/images/colis.png"
   ),
 
   PackageModel(
@@ -83,5 +87,6 @@ final List<PackageModel> fakePackages = [
     shippingDate: DateTime(2026, 10, 20),
 
     amountToPay: 18000,
+      imagePath: "assets/images/colis.png"
   ),
 ];
