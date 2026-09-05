@@ -29,7 +29,7 @@ class LoginScreenState extends ConsumerState<LoginScreen>{
 @override
 Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:AppColors.backgroundLight,
+      backgroundColor:Theme.of(context).scaffoldBackgroundColor,
       body:SafeArea(
           bottom: false,
           child: Column(
@@ -48,11 +48,11 @@ Widget build(BuildContext context) {
                             ),
                             Text(
                               AppConstants.appName,
-                              style:TextStyle(fontSize:24,fontWeight: FontWeight.bold,color:AppColors.primaryTextLight),
+                              style:TextStyle(fontSize:24,fontWeight: FontWeight.bold,color:Theme.of(context).colorScheme.secondary),
                             ),
                             Text(
                               AppLocalizations.of(context)!.welcome,
-                              style:TextStyle(fontSize:16,fontWeight: FontWeight.w600,color:AppColors.secondaryText),
+                              style:TextStyle(fontSize:16,fontWeight: FontWeight.w600,color:Theme.of(context).colorScheme.onSecondary),
                             ),
                             SizedBox(height: 10,),
                             Image.asset(
@@ -73,7 +73,7 @@ Widget build(BuildContext context) {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Checkbox(value: false, onChanged: (value){},hoverColor:AppColors.secondaryText,),
+                                Checkbox(value: false, onChanged: (value){},hoverColor:Theme.of(context).colorScheme.onSecondary,),
                                 Flexible(child:Text(
                                   AppLocalizations.of(context)!.remindMe,
                                   style:TextStyle(fontSize:14,fontWeight: FontWeight.bold,color:AppColors.secondaryText),
@@ -93,7 +93,7 @@ Widget build(BuildContext context) {
                                       TextSpan(
                                         text: AppLocalizations.of(context)!.haveAccount,
                                         style: TextStyle(
-                                          color: AppColors.secondaryText,
+                                          color: Theme.of(context).colorScheme.onSecondary,
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
                                         ),

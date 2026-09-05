@@ -27,7 +27,7 @@ class OtpScreenState extends ConsumerState<OtpScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:AppColors.backgroundLight,
+        backgroundColor:Theme.of(context).scaffoldBackgroundColor,
         body:SafeArea(
             bottom: false,
             child: Column(
@@ -42,8 +42,8 @@ class OtpScreenState extends ConsumerState<OtpScreen>{
                     children: [
                       Center(child: Icon(Icons.lock_outline_rounded,color:AppColors.primary,size:MediaQuery.of(context).size.width*0.08)),
                       SizedBox(height: 15,),
-                      Text(AppLocalizations.of(context)!.always,style:TextStyle(fontSize:20,fontWeight: FontWeight.bold,color:AppColors.primaryTextLight),),
-                      Text(AppLocalizations.of(context)!.otpSend,style:TextStyle(fontSize:13,fontWeight: FontWeight.w300,color:AppColors.secondaryText),),
+                      Text(AppLocalizations.of(context)!.always,style:TextStyle(fontSize:20,fontWeight: FontWeight.bold,color:Theme.of(context).colorScheme.secondary),),
+                      Text(AppLocalizations.of(context)!.otpSend,style:TextStyle(fontSize:13,fontWeight: FontWeight.w300,color:Theme.of(context).colorScheme.onSecondary),),
                       SizedBox(height:30,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -53,7 +53,7 @@ class OtpScreenState extends ConsumerState<OtpScreen>{
                             height: 46,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: AppColors.secondary,
+                              color: Theme.of(context).colorScheme.surface,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.black.withOpacity(0.08),

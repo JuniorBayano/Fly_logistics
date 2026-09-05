@@ -33,7 +33,7 @@ class RegisterScreenState extends ConsumerState<RegisterScreen>{
     final local = AppLocalizations.of(context)!;
 
     return Scaffold(
-      backgroundColor:AppColors.backgroundLight,
+      backgroundColor:Theme.of(context).scaffoldBackgroundColor,
       body:SafeArea(
         bottom: false,
           child: Column(
@@ -52,11 +52,11 @@ class RegisterScreenState extends ConsumerState<RegisterScreen>{
                             ),
                             Text(
                                 AppConstants.appName,
-                              style:TextStyle(fontSize:24,fontWeight: FontWeight.bold,color:AppColors.primaryTextLight),
+                              style:TextStyle(fontSize:24,fontWeight: FontWeight.bold,color:Theme.of(context).colorScheme.secondary),
                             ),
                             Text(
                               AppLocalizations.of(context)!.createAccount,
-                              style:TextStyle(fontSize:16,fontWeight: FontWeight.w600,color:AppColors.secondaryText),
+                              style:TextStyle(fontSize:16,fontWeight: FontWeight.w600,color:Theme.of(context).colorScheme.onSecondary),
                             ),
                             AuthTextField(
                               label: AppLocalizations.of(context)!.fullName,
@@ -83,9 +83,15 @@ class RegisterScreenState extends ConsumerState<RegisterScreen>{
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Checkbox(value: true, onChanged: (value){}),
-                                Flexible(child:RichText(
-                                  text: TextSpan(
+                                Checkbox(
+                                    value: true,
+                                    onChanged: (value){},
+                                    checkColor:AppColors.primary ,
+                                    activeColor:AppColors.secondary
+                                ),
+                                Flexible(
+                                    child:RichText(
+                                    text: TextSpan(
                                     children: [
                                       TextSpan(
                                         text: AppLocalizations.of(context)!.agree_condition,

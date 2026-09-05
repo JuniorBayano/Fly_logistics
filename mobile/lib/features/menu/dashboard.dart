@@ -30,7 +30,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:AppColors.backgroundLight,
+      backgroundColor:Theme.of(context).scaffoldBackgroundColor,
       body:SafeArea(
         bottom: false,
           child: Column(
@@ -69,22 +69,22 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("Bonjour 👋",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w600,color:AppColors.secondaryText),),
+                                        Text("Salut 👋",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w600,color:AppColors.secondaryText),),
                                         Text("Tsafack Junior",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),)
                                       ],
                                     ),
                                   ),
-                                  Container(
-                                    width: MediaQuery.of(context).size.width*0.1,
-                                    child: GestureDetector(
-                                      onTap: (){},
-                                      child:CircleAvatar(
-                                        backgroundColor: AppColors.secondary,
-                                        radius:20,
-                                        child: Icon(Icons.search_rounded,size:24,color:AppColors.backgroundDark,),
-                                      ) ,
-                                    ),
-                                  )
+                                  // Container(
+                                  //   width: MediaQuery.of(context).size.width*0.1,
+                                  //   child: GestureDetector(
+                                  //     onTap: (){},
+                                  //     child:CircleAvatar(
+                                  //       backgroundColor: AppColors.secondary,
+                                  //       radius:20,
+                                  //       child: Icon(Icons.search_rounded,size:24,color:AppColors.backgroundDark,),
+                                  //     ) ,
+                                  //   ),
+                                  // )
                                 ],
                               ) ,
                             ),
@@ -116,7 +116,8 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                   width: MediaQuery.of(context).size.width*0.42,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
-                                    border: Border.all(width: 1.5,color:AppColors.secondary)
+                                    border: Border.all(width: 1.5,color:AppColors.secondary),
+                                      color: Theme.of(context).colorScheme.surfaceContainer
                                   ),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +133,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.bold,
-                                          color: AppColors.backgroundDark,
+                                          color: Theme.of(context).colorScheme.secondary,
                                         ),
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
@@ -159,7 +160,8 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                   width: MediaQuery.of(context).size.width*0.42,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
-                                      border: Border.all(width: 1.5,color:AppColors.secondary)
+                                      border: Border.all(width: 1.5,color:AppColors.secondary),
+                                      color: Theme.of(context).colorScheme.surfaceContainer
                                   ),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,7 +177,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.bold,
-                                          color: AppColors.backgroundDark,
+                                          color: Theme.of(context).colorScheme.secondary,
                                         ),
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
@@ -203,7 +205,8 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                               width: MediaQuery.of(context).size.width,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
-                                  border: Border.all(width: 1.5,color:AppColors.secondary)
+                                  border: Border.all(width: 1.5,color:AppColors.secondary),
+                                  color: Theme.of(context).colorScheme.surfaceContainer
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(10),
@@ -218,7 +221,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                           style: TextStyle(
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold,
-                                            color: AppColors.backgroundDark,
+                                            color: Theme.of(context).colorScheme.secondary,
                                           ),
                                           maxLines: 1,
                                           overflow: TextOverflow.ellipsis,
@@ -258,7 +261,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(AppLocalizations.of(context)!.recentSms,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),textAlign: TextAlign.start,),
+                                Text(AppLocalizations.of(context)!.recentSms,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.secondary,),textAlign: TextAlign.start,),
                                 TextButton(
                                   onPressed: () {},
                                   child:Text(
@@ -277,6 +280,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                   width: 1,
                                   color: AppColors.secondary,
                                 ),
+                                  color: Theme.of(context).colorScheme.surfaceContainer
                               ),
                               child: Row(
                                 children: [
@@ -300,7 +304,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                               style: TextStyle(
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.bold,
-                                                color: AppColors.backgroundDark,
+                                                color: Theme.of(context).colorScheme.secondary,
                                               ),
                                               maxLines: 1,
                                               overflow: TextOverflow.ellipsis,
@@ -349,6 +353,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                   width: 1,
                                   color: AppColors.secondary,
                                 ),
+                                  color: Theme.of(context).colorScheme.surfaceContainer
                               ),
                               child: Row(
                                 children: [
@@ -370,7 +375,7 @@ class DashboardSCreenState extends ConsumerState<DashboardSCreen>{
                                               style: TextStyle(
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.bold,
-                                                color: AppColors.backgroundDark,
+                                                color: Theme.of(context).colorScheme.secondary,
                                               ),
                                               maxLines: 1,
                                               overflow: TextOverflow.ellipsis,

@@ -311,7 +311,7 @@ abstract class AppLocalizations {
   /// No description provided for @transit.
   ///
   /// In en, this message translates to:
-  /// **'In transit'**
+  /// **'In Transit'**
   String get transit;
 
   /// No description provided for @delivery.
@@ -329,7 +329,7 @@ abstract class AppLocalizations {
   /// No description provided for @finish.
   ///
   /// In en, this message translates to:
-  /// **'completed'**
+  /// **'Completed'**
   String get finish;
 
   /// No description provided for @trackingNumber.
@@ -403,6 +403,288 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'profile'**
   String get profil;
+
+  /// No description provided for @progress.
+  ///
+  /// In en, this message translates to:
+  /// **'In Progress'**
+  String get progress;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @air.
+  ///
+  /// In en, this message translates to:
+  /// **'Air'**
+  String get air;
+
+  /// No description provided for @sea.
+  ///
+  /// In en, this message translates to:
+  /// **'Sea'**
+  String get sea;
+
+  /// No description provided for @preparation.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing'**
+  String get preparation;
+
+  /// No description provided for @arrived.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrived at the Center'**
+  String get arrived;
+
+  /// No description provided for @prepared.
+  ///
+  /// In en, this message translates to:
+  /// **'SHIPMENT'**
+  String get prepared;
+
+  /// No description provided for @mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Mode'**
+  String get mode;
+
+  /// No description provided for @livraison.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery'**
+  String get livraison;
+
+  /// No description provided for @progression.
+  ///
+  /// In en, this message translates to:
+  /// **'PROGRESS'**
+  String get progression;
+
+  /// No description provided for @see_detail.
+  ///
+  /// In en, this message translates to:
+  /// **'View Details'**
+  String get see_detail;
+
+  /// No description provided for @package.
+  ///
+  /// In en, this message translates to:
+  /// **'Package'**
+  String get package;
+
+  /// No description provided for @description.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get description;
+
+  /// No description provided for @pay.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay/Upload proof'**
+  String get pay;
+
+  /// No description provided for @weight.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String get weight;
+
+  /// No description provided for @expeditionDate.
+  ///
+  /// In en, this message translates to:
+  /// **'DATE OF SHIPMENT'**
+  String get expeditionDate;
+
+  /// No description provided for @payMOntant.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount Due'**
+  String get payMOntant;
+
+  /// No description provided for @support.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Support'**
+  String get support;
+
+  /// No description provided for @paiement.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload Payment'**
+  String get paiement;
+
+  /// No description provided for @expedition_details.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipping Details'**
+  String get expedition_details;
+
+  /// No description provided for @shipping_estimator.
+  ///
+  /// In en, this message translates to:
+  /// **'SHIPPING ESTIMATOR'**
+  String get shipping_estimator;
+
+  /// No description provided for @shipping_estimator_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Get a quick estimate for your international shipments.'**
+  String get shipping_estimator_description;
+
+  /// No description provided for @origin.
+  ///
+  /// In en, this message translates to:
+  /// **'Origin'**
+  String get origin;
+
+  /// No description provided for @departure_city_or_country.
+  ///
+  /// In en, this message translates to:
+  /// **'City or country of departure'**
+  String get departure_city_or_country;
+
+  /// No description provided for @destination.
+  ///
+  /// In en, this message translates to:
+  /// **'Destination'**
+  String get destination;
+
+  /// No description provided for @arrival_city_or_country.
+  ///
+  /// In en, this message translates to:
+  /// **'City or country of arrival'**
+  String get arrival_city_or_country;
+
+  /// No description provided for @weight_kg.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight (kg)'**
+  String get weight_kg;
+
+  /// No description provided for @transport_method.
+  ///
+  /// In en, this message translates to:
+  /// **'Transport Method'**
+  String get transport_method;
+
+  /// No description provided for @choose_transport_method.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a transport method'**
+  String get choose_transport_method;
+
+  /// No description provided for @air_freight.
+  ///
+  /// In en, this message translates to:
+  /// **'Air'**
+  String get air_freight;
+
+  /// No description provided for @sea_freight.
+  ///
+  /// In en, this message translates to:
+  /// **'Sea'**
+  String get sea_freight;
+
+  /// No description provided for @calculate_quote.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculate Quote'**
+  String get calculate_quote;
+
+  /// No description provided for @standard_rates_per_kg.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard Rates per kg'**
+  String get standard_rates_per_kg;
+
+  /// No description provided for @air_shipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Air Freight'**
+  String get air_shipping;
+
+  /// No description provided for @air_shipping_duration.
+  ///
+  /// In en, this message translates to:
+  /// **'5-7 business days'**
+  String get air_shipping_duration;
+
+  /// No description provided for @sea_shipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Sea Freight'**
+  String get sea_shipping;
+
+  /// No description provided for @sea_shipping_duration.
+  ///
+  /// In en, this message translates to:
+  /// **'45-60 business days'**
+  String get sea_shipping_duration;
+
+  /// No description provided for @additional_information.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional Information'**
+  String get additional_information;
+
+  /// No description provided for @estimated_rates_notice.
+  ///
+  /// In en, this message translates to:
+  /// **'The displayed rates are estimates excluding taxes and may vary depending on the nature of the goods (dangerous, fragile, oversized).'**
+  String get estimated_rates_notice;
+
+  /// No description provided for @personal_information.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Information'**
+  String get personal_information;
+
+  /// No description provided for @phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get phone;
+
+  /// No description provided for @preferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get preferences;
+
+  /// No description provided for @dark_mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Mode'**
+  String get dark_mode;
+
+  /// No description provided for @dark_mode_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust the appearance of the application'**
+  String get dark_mode_description;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @language_options.
+  ///
+  /// In en, this message translates to:
+  /// **'French / English'**
+  String get language_options;
+
+  /// No description provided for @logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get logout;
 }
 
 class _AppLocalizationsDelegate

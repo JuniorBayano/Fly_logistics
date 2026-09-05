@@ -60,7 +60,7 @@ class CustomHeader extends StatelessWidget {
             onPressed: onRightPressed,
             icon: Icon(
               rightIcon,
-              color: AppColors.backgroundDark,
+              color: AppColors.primary,
               size: 30,
             ),
           ),

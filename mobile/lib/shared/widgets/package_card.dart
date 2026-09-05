@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/Theme/app_colors.dart';
 import '../../features/tracking/models/package_model.dart';
 import '../../features/tracking/screens/tracking_detail_screen.dart';
+import '../../l10n/app_localizations.dart';
 
 class PackageCard extends StatelessWidget {
   final PackageModel package;
@@ -13,13 +14,13 @@ class PackageCard extends StatelessWidget {
     required this.package,
   });
 
-  String getShippingMethod() {
+  String getShippingMethod(BuildContext context) {
     switch (package.shippingMethod) {
       case ShippingMethod.air:
-        return 'Aérien';
+        return AppLocalizations.of(context)!.air;
 
       case ShippingMethod.sea:
-        return 'Maritime';
+        return AppLocalizations.of(context)!.sea;
     }
   }
 
@@ -34,19 +35,19 @@ class PackageCard extends StatelessWidget {
     }
   }
 
-  String getStatusText() {
+  String getStatusText(BuildContext context) {
     switch (package.status) {
       case PackageStatus.preparing:
-        return 'En préparation';
+        return AppLocalizations.of(context)!.preparation;
 
       case PackageStatus.transit:
-        return 'En transit';
+        return AppLocalizations.of(context)!.transit;
 
       case PackageStatus.arrived:
-        return 'Arrivé au centre';
+        return AppLocalizations.of(context)!.arriveCenter;
 
       case PackageStatus.delivered:
-        return 'Livré';
+        return AppLocalizations.of(context)!.delivery;
     }
   }
 
@@ -84,7 +85,7 @@ class PackageCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 15),
 
       decoration: BoxDecoration(
-        color: AppColors.backgroundLight,
+        color: Theme.of(context).colorScheme.surfaceContainer,
 
         borderRadius: BorderRadius.circular(20),
 
@@ -111,8 +112,8 @@ class PackageCard extends StatelessWidget {
 
               children: [
 
-                const Text(
-                  'EXPÉDITION',
+                 Text(
+                  AppLocalizations.of(context)!.prepared,
                   style: TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.bold,
@@ -149,7 +150,7 @@ class PackageCard extends StatelessWidget {
                       const SizedBox(width: 5),
 
                       Text(
-                        getStatusText(),
+                        getStatusText(context),
 
                         style: TextStyle(
                           fontSize: 12,
@@ -172,10 +173,10 @@ class PackageCard extends StatelessWidget {
               child: Text(
                 '#${package.code}',
 
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.backgroundDark,
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
             ),
@@ -207,8 +208,7 @@ class PackageCard extends StatelessWidget {
                         const SizedBox(width: 5),
 
                         Text(
-                          'Mode : ${getShippingMethod()}',
-
+                          '${AppLocalizations.of(context)!.mode} : ${getShippingMethod(context)}',
                           style: const TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
@@ -232,7 +232,7 @@ class PackageCard extends StatelessWidget {
                         const SizedBox(width: 5),
 
                         Text(
-                          'Livraison : ${formatDate(package.estimatedDeliveryDate)}',
+                          '${AppLocalizations.of(context)!.livraison} : ${formatDate(package.estimatedDeliveryDate)}',
                           style: const TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
@@ -275,9 +275,7 @@ class PackageCard extends StatelessWidget {
                     const SizedBox(height: 5),
 
                     Text(
-                      'PROGRESSION : '
-                          '${(package.progress * 100).toInt()}%',
-
+                      '${AppLocalizations.of(context)!.progression} ${(package.progress * 100).toInt()}%',
                       style: const TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.w600,
@@ -315,14 +313,14 @@ class PackageCard extends StatelessWidget {
                 );
               },
 
-              child: const Row(
+              child:  Row(
                 mainAxisAlignment:
                 MainAxisAlignment.center,
 
                 children: [
 
                   Text(
-                    'Voir détail',
+                  AppLocalizations.of(context)!.see_detail,
 
                     style: TextStyle(
                       fontSize: 15,

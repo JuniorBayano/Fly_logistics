@@ -13,6 +13,11 @@ class AppTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: AppColors.primary,
         brightness: Brightness.light,
+        secondary: Color(0xFF000000),
+        onSecondary: Color(0xFF64748B),
+          surface: Color(0xFF64748B),
+          surfaceContainer: Color(0xFFFFFFFF),
+          surfaceBright:Color(0xFFDDDDDD),
       ),
     );
   }
@@ -25,6 +30,11 @@ class AppTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: AppColors.primary,
         brightness: Brightness.dark,
+        secondary: Color(0xFFFFFFFF),
+        onSecondary: Color(0xFF64748B),
+        surface: Color(0xFF64748B),
+        surfaceContainer: Color(0xFF162A2E),
+        surfaceBright: Color(0xFF162A2E),
       ),
     );
   }

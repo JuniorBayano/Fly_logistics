@@ -53,7 +53,7 @@ class _OnboardScreenState extends ConsumerState<OnboardScreen> {
     ];
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundLight,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
 
       body: SafeArea(
         child: Padding(

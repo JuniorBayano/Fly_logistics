@@ -32,7 +32,7 @@ class TrackingScreenState extends ConsumerState<TrackingScreen> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        backgroundColor: AppColors.backgroundLight,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: SafeArea(
           bottom: false,
           child: Column(
@@ -77,15 +77,15 @@ class TrackingScreenState extends ConsumerState<TrackingScreen> {
                             fontWeight: FontWeight.normal,
                           ),
 
-                          tabs: const [
+                          tabs:  [
                             Tab(
-                              text: "En cours",
+                              text:AppLocalizations.of(context)!.progress,
                             ),
                             Tab(
-                              text: "Terminées",
+                              text: AppLocalizations.of(context)!.finish,
                             ),
                             Tab(
-                              text: "Toutes",
+                              text:AppLocalizations.of(context)!.all,
                             ),
                           ],
                         ),

@@ -4,6 +4,7 @@ import 'package:fly_logistics/features/tracking/screens/payment_screen.dart';
 import 'package:fly_logistics/shared/widgets/app_button.dart';
 
 import '../../../core/Theme/app_colors.dart';
+import '../../../l10n/app_localizations.dart';
 import '../../../shared/widgets/custom_header.dart';
 import '../models/package_model.dart';
 
@@ -28,7 +29,7 @@ class TrackingScreenDetailState
     final package = widget.package;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundLight,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
         bottom: false,
         child: SingleChildScrollView(
@@ -39,7 +40,7 @@ class TrackingScreenDetailState
 
                 /// HEADER
                 CustomHeader(
-                  title: "Détails de l'expédition",
+                  title:  AppLocalizations.of(context)!.expedition_details,
                   leftIcon: Icons.arrow_back,
                   rightIcon: Icons.more_vert,
 
@@ -108,21 +109,21 @@ class TrackingScreenDetailState
                       Row(
                         children: [
 
-                          const Text(
+                           Text(
                             "Colis ",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.backgroundDark,
+                              color: Theme.of(context).colorScheme.secondary,
                             ),
                           ),
 
                           Text(
                             "#${package.code}",
-                            style: const TextStyle(
+                            style:  TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.backgroundDark,
+                              color: Theme.of(context).colorScheme.secondary,
                             ),
                           ),
                         ],
@@ -143,7 +144,7 @@ class TrackingScreenDetailState
                       const SizedBox(height: 15),
 
                       /// BOUTON
-                      AppButton( text: "Payer / Uploader preuve", onPressed: () { Navigator.push( context, MaterialPageRoute( builder: (_) => PaymentScreen( package: package, ), ), ); }, ),
+                      AppButton( text:  AppLocalizations.of(context)!.pay, onPressed: () { Navigator.push( context, MaterialPageRoute( builder: (_) => PaymentScreen( package: package, ), ), ); }, ),
                     ],
                   ),
                 ),
@@ -165,7 +166,7 @@ class TrackingScreenDetailState
 
                           _buildInfoCard(
                             context,
-                            title: "POIDS",
+                            title:  AppLocalizations.of(context)!.weight,
                             value: "${package.weight} kg",
                           ),
 
@@ -186,7 +187,7 @@ class TrackingScreenDetailState
 
                           _buildInfoCard(
                             context,
-                            title: "DATE D'EXPÉDITION",
+                            title:  AppLocalizations.of(context)!.expeditionDate,
                             value: _formatDate(
                               package.shippingDate,
                             ),
@@ -194,7 +195,7 @@ class TrackingScreenDetailState
 
                           _buildInfoCard(
                             context,
-                            title: "MONTANT À PAYER",
+                            title: AppLocalizations.of(context)!.payMOntant,
                             value:
                             "${package.amountToPay.toStringAsFixed(0)} XAF",
                             valueColor: AppColors.primary,
@@ -239,8 +240,8 @@ class TrackingScreenDetailState
                             ),
                           ),
 
-                          child: const Text(
-                            "Aide & Support",
+                          child: Text(
+                            AppLocalizations.of(context)!.support,
                             textAlign: TextAlign.center,
 
                             style: TextStyle(
@@ -270,8 +271,8 @@ class TrackingScreenDetailState
                             color: AppColors.primary,
                           ),
 
-                          child: const Text(
-                            "Uploader Paiement",
+                          child:  Text(
+                            AppLocalizations.of(context)!.pay,
 
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -346,7 +347,7 @@ class TrackingScreenDetailState
                 fontWeight: FontWeight.bold,
 
                 color: valueColor ??
-                    AppColors.backgroundDark,
+                    Theme.of(context).colorScheme.secondary,
               ),
             ),
           ],
@@ -385,9 +386,8 @@ class TrackingScreenDetailState
 
           children: [
 
-            const Text(
-              "MODE",
-
+             Text(
+            AppLocalizations.of(context)!.mode,
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
@@ -420,10 +420,10 @@ class TrackingScreenDetailState
                     overflow:
                     TextOverflow.ellipsis,
 
-                    style: const TextStyle(
+                    style:  TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.backgroundDark,
+                      color: Theme.of(context).colorScheme.secondary,
                     ),
                   ),
                 ),
@@ -440,16 +440,16 @@ class TrackingScreenDetailState
     switch (status) {
 
       case PackageStatus.preparing:
-        return "EN PRÉPARATION";
+        return AppLocalizations.of(context)!.preparation;
 
       case PackageStatus.transit:
-        return "EN TRANSIT";
+        return AppLocalizations.of(context)!.transit;
 
       case PackageStatus.arrived:
-        return "ARRIVÉ AU CENTRE";
+        return AppLocalizations.of(context)!.arriveCenter;
 
       case PackageStatus.delivered:
-        return "LIVRÉ";
+        return AppLocalizations.of(context)!.delivery;
     }
   }
 

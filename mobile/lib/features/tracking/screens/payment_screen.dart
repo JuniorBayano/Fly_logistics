@@ -25,7 +25,7 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
     final package = widget.package;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundLight,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
         bottom: false,
         child: SingleChildScrollView(
@@ -54,10 +54,10 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
                 const SizedBox(height: 5),
                 Text(
                   "${package.amountToPay.toStringAsFixed(0)} XAF",
-                  style: const TextStyle(
+                  style:  TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.backgroundDark,
+                    color: Theme.of(context).colorScheme.secondary,
                   ),
                 ),
                 const SizedBox(height: 5),
@@ -88,7 +88,7 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
                         height: 48,
                       ),
                       const SizedBox(width: 10),
-                      const Expanded(
+                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -105,7 +105,7 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.backgroundDark,
+                                color: Theme.of(context).colorScheme.secondary,
                               ),
                             ),
                           ],
@@ -132,14 +132,14 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const Align(
+                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "Preuve de paiement",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.backgroundDark,
+                      color: Theme.of(context).colorScheme.secondary,
                     ),
                   ),
                 ),
@@ -166,7 +166,7 @@ class PaymentScreenState extends ConsumerState<PaymentScreen> {
                       height: 204,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: AppColors.secondary,
+                        color: Theme.of(context).colorScheme.surfaceBright,
                         borderRadius: BorderRadius.circular(15),
                       ),
                       alignment: Alignment.center,

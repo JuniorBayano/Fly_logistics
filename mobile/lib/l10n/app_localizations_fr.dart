@@ -123,13 +123,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get transit => 'En transit';
 
   @override
-  String get delivery => 'Livrées';
+  String get delivery => 'Livré';
 
   @override
   String get activePackage => 'colis actif(s)';
 
   @override
-  String get finish => 'terminé(s)';
+  String get finish => 'Terminées';
 
   @override
   String get trackingNumber => 'Numéro de suivi';
@@ -168,4 +168,147 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get profil => 'profil';
+
+  @override
+  String get progress => 'En cours';
+
+  @override
+  String get all => 'Toutes';
+
+  @override
+  String get air => 'Aérien';
+
+  @override
+  String get sea => 'Maritime';
+
+  @override
+  String get preparation => 'En transit';
+
+  @override
+  String get arrived => 'Arrivé au centre';
+
+  @override
+  String get prepared => 'EXPÉDITION';
+
+  @override
+  String get mode => 'Mode';
+
+  @override
+  String get livraison => 'Livraison';
+
+  @override
+  String get progression => 'PROGRESSION';
+
+  @override
+  String get see_detail => 'Voir détail';
+
+  @override
+  String get package => 'Colis';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get pay => 'Payer/Importer preuve';
+
+  @override
+  String get weight => 'Poids';
+
+  @override
+  String get expeditionDate => 'DATE D\'EXPÉDITION';
+
+  @override
+  String get payMOntant => 'Montant à payer';
+
+  @override
+  String get support => 'Aide & Support';
+
+  @override
+  String get paiement => 'Télécharger le paiement';
+
+  @override
+  String get expedition_details => 'Détails de l\'expédition';
+
+  @override
+  String get shipping_estimator => 'ESTIMATEUR DE TRANSPORT';
+
+  @override
+  String get shipping_estimator_description =>
+      'Obtenez une estimation rapide pour vos envois internationaux.';
+
+  @override
+  String get origin => 'Origine';
+
+  @override
+  String get departure_city_or_country => 'Ville ou pays de depart';
+
+  @override
+  String get destination => 'Destination';
+
+  @override
+  String get arrival_city_or_country => 'Ville ou pays d\'arrivee';
+
+  @override
+  String get weight_kg => 'Poids(kg)';
+
+  @override
+  String get transport_method => 'Moyen de transport';
+
+  @override
+  String get choose_transport_method => 'Choisir un moyen de transport';
+
+  @override
+  String get air_freight => 'Aérien';
+
+  @override
+  String get sea_freight => 'Maritime';
+
+  @override
+  String get calculate_quote => 'Calculer le devis';
+
+  @override
+  String get standard_rates_per_kg => 'Tarifs Standard au kg';
+
+  @override
+  String get air_shipping => 'Fret Aérien';
+
+  @override
+  String get air_shipping_duration => '5-7 jours ouvrés';
+
+  @override
+  String get sea_shipping => 'Fret Maritime';
+
+  @override
+  String get sea_shipping_duration => '45-60 jours ouvrés';
+
+  @override
+  String get additional_information => 'Information additionnelle';
+
+  @override
+  String get estimated_rates_notice =>
+      'Les tarifs affichés sont des estimations HT et peuvent varier selon la nature des marchandises(dangereuses, fragiles, hors gabarit).';
+
+  @override
+  String get personal_information => 'Informations personnelles';
+
+  @override
+  String get phone => 'Téléphone';
+
+  @override
+  String get preferences => 'Préférences';
+
+  @override
+  String get dark_mode => 'Mode Sombre';
+
+  @override
+  String get dark_mode_description => 'Adapter l\'apparence de l\'application';
+
+  @override
+  String get language => 'Langue';
+
+  @override
+  String get language_options => 'Français / English';
+
+  @override
+  String get logout => 'Se deconnecter';
 }

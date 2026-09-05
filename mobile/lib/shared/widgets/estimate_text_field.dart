@@ -43,10 +43,10 @@ Padding(
 padding: const EdgeInsets.only(left: 3),
 child: Text(
 label,
-style: const TextStyle(
+style:  TextStyle(
 fontSize: 14,
 fontWeight: FontWeight.w500,
-color: AppColors.primaryTextLight,
+color: Theme.of(context).colorScheme.secondary,
 ),
 ),
 ),

@@ -18,8 +18,8 @@ class AppBottomNavBar extends ConsumerWidget {
 
     return Container(
       height: 70,
-      decoration: const BoxDecoration(
-        color: AppColors.backgroundLight,
+      decoration:  BoxDecoration(
+        color: Theme.of(context).scaffoldBackgroundColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
